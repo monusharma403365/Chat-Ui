@@ -1,0 +1,43 @@
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link-first nav-link-first " href="index.html">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+            <div class="d-flex align-items-center">
+              <!-- <img style="width: 25px ; margin-right: 10px; color: rgb(17, 109, 17);" alt=""> -->
+              <i class="bi bi-whatsapp" style="width: 40px ; margin-right: 1px; color: rgb(17, 109, 17); font-size: 28px;"></i>
+              <h5 style="color:#012970"><strong>Chats</strong></h5>
+            </div>
+              <form class="d-flex Rights" >
+                <div class="chat-icon-asidebar">
+               <span  class="me-2 "> <i style="margin-right: 20px; color:gray" (click)="addNewMember()" class="bi bi-pencil-square" ></i></span>
+                <span class="me-2"><i style="font: size 16px; color:gray" class="bi bi-justify"></i>
+                </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+       
+          <!-- ************* -->
+        </a> 
+      </li><!-- End Dashboard Nav -->
+    
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <input class="inputSettel" type="text" placeholder="Search or start new chat" style="outline: none;" [(ngModel)]="search"><i  class="bi bi-search headerSearchIcon"></i>
+       
+        </a>
+    
+      </li><!-- End Components Nav -->
+      <div class="member-list-head">
+      <li class="nav-item" *ngFor="let i of person |filter:search">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-circle"style="width: 46px; font-size:26px" ></i>
+          <span style="font-size: 20px;color: #012970; margin-left: 10px;">{{i.name}}</span><i class=" ms-auto"></i><br>
+        </a> </div>
+    </ul>
+
+  </aside><!-- End Sidebar-->

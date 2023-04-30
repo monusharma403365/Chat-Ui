@@ -1,0 +1,30 @@
+.inputSettel{
+   margin-left: 0px;
+   
+    box-shadow: 0px 0px 1px 1px rgb(157, 157, 157);
+    border: none;
+    // border-bottom: 1px solid gray;
+    border-bottom: 1px solid gray;
+    // bottom-border: 1px solid black;
+     width: 100%;
+     transition: 0.2s;
+}
+.headerSearchIcon{
+    right: 53px; 
+    font-size: 12px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 98px;
+    
+}
+.member-list-head{
+    scroll-behavior: smooth; 
+    width: 94%;
+    height: 82%;
+    overflow-y: scroll;
+    position: absolute;
+}
+
